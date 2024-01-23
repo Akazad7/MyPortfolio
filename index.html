@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./Assets/ProfilePicture.png" type="image/x-icon">
+  <title>My Portfolio</title>
+</head>
+<body>
+
+  <header id="header">
+    <nav>
+      <div class="container flexDisplay">
+        <div class="navLogo">
+          <a href="#heroSection"><h1><span>A</span>bdul<span> K</span>alam <span>A</span>zad</h1></a>
+        </div>
+        <div class="navMenu">
+          <ul class="flexDisplay">
+            <li><a href="#heroSection" class="navMenuItem navActive">Home</a></li>
+            <li><a href="#aboutSection" class="navMenuItem">About</a></li>
+            <li><a href="#skillSection" class="navMenuItem">Skills</a></li>
+            <li><a href="#portfolioSection" class="navMenuItem">Portfolio</a></li>
+            <li><a href="#contactSection" class="navMenuItem">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navBtn">
+          <button class="toggleBtn" onclick="modeToggle()">
+            <img src="Assets/lightMode.svg">
+            <img src="Assets/darkMode.svg">
+          </button>
+        </div>
+      </div>
+      <div class="hamburger" onclick="hamburgerAnimation();"></div>
+    </nav>
+  </header>
+
+  <section id="heroSection" class="container flexDisplay">
+    <div class="left">
+      <div class="position"><h3>Web Development</h3></div>
+      <div class="name"><h1><span>A</span>bdul<span> K</span>alam <span>A</span>zad</h1></div>
+      <div class="about">Recent fresh graduate with strong passionate in web development with flair for innovation, crafting digital experiences that captivate and empower users. Let's build something amazing together.</div>
+      <div class="btns">
+        <button><a download target="_blank" href="Assets/Abdul Resume Soft_Eng.pdf" class="downloadCV">Download CV</a></button>
+        <button><a href="#contactSection" class="hireMe">Hire Me Now</a></button>
+      </div>
+    </div>
+    <div class="right">
+      <div class="circle">
+        <div class="imgBox">
+          <img src="./Assets/ProfilePicture.png">
+        </div>
+      </div>
+    </div>
+    <div class="links">
+      <a target="_blank" href="https://www.linkedin.com/in/abdul-kalam-azad-m-58745418b"><img src="./Assets/linkedin.svg"></a>      
+      <a target="_blank" href="https://github.com/Akazad7"><img src="./Assets/github.svg"></a>
+      <a target="_blank" href="https://www.instagram.com/akazad549/"><img src="./Assets/square-instagram.svg"></a>
+      
+    </div>
+  </section>
+
+  <section id="aboutSection" class="container flexDisplay">
+    <div class="heading"><h1><span>A</span>bout Me</h1></div>
+    <div class="left">
+      <div class="aboutimg"><img src="./Assets/about.png"></div>
+    </div>
+    <div class="right">
+      <p>passionate about <span>Web Development</span> with strong focus on frontend development. Proficient in <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span>, <span>JAVA</span> with a deep understanding of modern web standards and best practices</p>
+    </div>
+  </section>
+
+  <section id="skillSection" class="container flexDisplay">
+    <div class="heading"><h1>Skills</h1></div>
+    <div class="skills">
+      <div class="skill flexDisplay">
+        <h1>HTML</h1>
+        <h1 class="label">Advanced</h1>
+        <div class="progressBar"></div>
+        <h1 class="percentage">90%</h1>
+      </div>
+      <div class="skill flexDisplay">
+        <h1>CSS</h1>
+        <h1 class="label">Intermediate</h1>
+        <div class="progressBar"></div>
+        <h1 class="percentage">70%</h1>
+      </div>
+      <div class="skill flexDisplay">
+        <h1>JavaScript</h1>
+        <h1 class="label">Intermediate</h1>
+        <div class="progressBar"></div>
+        <h1 class="percentage">60%</h1>
+      </div>
+      <div class="skill flexDisplay">
+        <h1>Java</h1>
+        <h1 class="label">Intermediate</h1>
+        <div class="progressBar"></div>
+        <h1 class="percentage">75%</h1>
+      </div>
+      <div class="skill flexDisplay">
+        <h1>SQL</h1>
+        <h1 class="label">Intermediate</h1>
+        <div class="progressBar"></div>
+        <h1 class="percentage">70%</h1>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolioSection" class="container flexDisplay">
+    <div class="heading"><h1>Portfolio</h1></div>
+    <div class="projects flexDisplay">
+      <div class="project">
+        <div class="thumbnail"></div>
+        <h1 class="projectName">Online Code Editor</h1>
+        <p class="projectDesc">Developed a live Code Editor for web development languages like HTML, CSS and JavaScript</p>
+        <div class="btns">
+          <button><a target="_blank" href="https://akazad7.github.io/CVIP-web-development/Online-Compiler/index.html">Visit</a></button>
+          <button><a target="_blank" href="https://github.com/Akazad7/CVIP-web-development/blob/main/Online-Compiler/index.html">GitHub</a></button>
+        </div>
+      </div>
+      <div class="project">
+        <div class="thumbnail"></div>
+        <h1 class="projectName">URL Shortener</h1>
+        <p class="projectDesc">Created a URL shortener that takes a long url as an input and provide various short url with the help of external API</p>
+        <div class="btns">
+          <button><a target="_blank" href="https://akazad7.github.io/CVIP-web-development/URL-Shortener/index.html">Visit</a></button>
+          <button><a target="_blank" href="https://github.com/Akazad7/CVIP-web-development/blob/main/URL-Shortener/index.html">GitHub</a></button>
+        </div>
+      </div>
+      <div class="project">
+        <div class="thumbnail"></div>
+        <h1 class="projectName">Netflix Clone</h1>
+        <p class="projectDesc">Created Responsive Clone website for a popular video streaming plaatform called "Netflix"</p>
+        <div class="btns">
+          <button><a target="_blank" href="https://akazad7.github.io/CVIP-web-development/Netflix-Clone/index.html">Visit</a></button>
+          <button><a target="_blank" href="https://github.com/Akazad7/CVIP-web-development/blob/main/Netflix-Clone/index.html">GitHub</a></button>
+        </div>
+      </div>
+      <div class="project">
+        <div class="thumbnail"></div>
+        <h1 class="projectName">Rock Paper Scissors - Gmae</h1>
+        <p class="projectDesc">Created a famous game with HTML, CSS and JS. Added a AutoPlay function that enables BOT gameplay</p>
+        <div class="btns">
+          <button><a target="_blank" href="https://akazad7.github.io/Rock-Paper-Scissors/index.html">Visit</a></button>
+          <button><a target="_blank" href="https://github.com/Akazad7/Rock-Paper-Scissors/blob/main/index.html">GitHub</a></button>
+        </div>
+      </div>
+      <div class="project">
+        <div class="thumbnail"></div>
+        <h1 class="projectName">Calculator</h1>
+        <p class="projectDesc">Created a basic calculator web app that can do all the Arithmetic maths</p>
+        <div class="btns">
+          <button><a target="_blank" href="https://akazad7.github.io/Calculator/index.html">Visit</a></button>
+          <button><a target="_blank" href="https://github.com/Akazad7/Calculator/blob/main/index.html">GitHub</a></button>
+        </div>
+      </div>
+      <div class="project">
+        <div class="thumbnail"></div>
+        <h1 class="projectName">Youtube Clone</h1>
+        <p class="projectDesc">Developed Clone website for a popular video streaming plaatform called "YouTube"</p>
+        <div class="btns">
+          <button><a target="_blank" href="https://akazad7.github.io/Youtube-Clone/index.html">Visit</a></button>
+          <button><a target="_blank" href="https://github.com/Akazad7/Youtube-Clone/blob/main/index.html">GitHub</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contactSection" class="container flexDisplay">
+    <div class="heading"><h1>Contact Me</h1></div>
+    <div class="formContainer">
+      <form id="contact_form" class="flexDisplay">
+        <input type="text" name="name" id="nameX" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="number" placeholder="Your Phone Number" required>
+        <textarea name="message" cols="30" rows="6" placeholder="Your Message"></textarea>
+        <div class="btns">
+          <button type="submit" onclick="sendMessage();"><a>Send</a></button>
+        </div>
+      </form>
+    </div>
+  </section>
+  
+  <footer id="footer">
+    <p>&copy; Abdul Kalam Azad || All Right Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
